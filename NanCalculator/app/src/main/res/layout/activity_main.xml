@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cafebg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ingredientDrop"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="456dp"
+        android:layout_weight="1"
+        android:background="@drawable/dropzonebg"
+        android:contentDescription="Ingredient Drop Zone"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add on"
+        android:textColor="#735143"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <ImageView
+        android:id="@+id/baseDrop"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="456dp"
+        android:layout_weight="1"
+        android:background="@drawable/dropzonebg"
+        android:contentDescription="Base Drop Zone"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="352dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/hotCoffeeImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Hot Coffee"
+            android:src="@drawable/hotcoffee"
+            android:tag="Hot Coffee" />
+
+        <ImageView
+            android:id="@+id/icedCoffeeImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Iced Coffee"
+            android:src="@drawable/icedcoffee"
+            android:tag="Hot Coffee" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="380dp"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/milkImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Milk"
+            android:src="@drawable/milk"
+            android:tag="Milk" />
+
+        <ImageView
+            android:id="@+id/vanillaImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Vanilla Syrup"
+            android:src="@drawable/vanilla"
+            android:tag="Vanilla Syrup" />
+
+        <ImageView
+            android:id="@+id/caramelImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Caramel Syrup"
+            android:src="@drawable/caramel"
+            android:tag="Vanilla Syrup" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/resultImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <ImageButton
+        android:id="@+id/mixButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484"
+        app:srcCompat="@drawable/mixbutton2" />
+
+    <ImageButton
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mixButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/resetbutton1" />
+
+    <ImageButton
+        android:id="@+id/instructButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999"
+        app:srcCompat="@drawable/cafebag1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base"
+        android:textColor="#735143"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
